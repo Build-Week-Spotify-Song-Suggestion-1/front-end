@@ -29,7 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    Font-Family: 'Overpass', Sans-Serif;
+    Font-Size: 17px;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +47,19 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+h1 {
+    Font-Family: 'Permanent Marker', Cursive;
+    Font-Size: 55px;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #264653;
+    color: #e9c46a;
+
 }
