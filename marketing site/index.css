@@ -233,62 +233,9 @@ footer a {
 /*----------About Us Page---------*/
 
 
-.gridcontainer{
-
-    position: relative;
-    top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-
-}
-
-.person{
-   
-    background-color: whitesmoke;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-    padding: 2rem;
-
-}
-
-.person img{
-    margin-bottom: 1rem;
-}
-
-
-
-.bio{
-    width: 1fr;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.bio h3{
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.socialMediaContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-
-}
-
-.socialMedia{ 
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: teal;
-}
-
 .aboutHeadBanner{
     background-image: url(/marketing\ site/assets/meetTeam.jpg);
+    background-size:cover;
     height: 30rem;
 }
 
@@ -306,6 +253,72 @@ footer a {
 }
 .aboutHeadBanner div p{
     font-size:2rem;
+}
+
+.gridcontainer{
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+}
+
+.person{
+   
+    background-color: whitesmoke;
+    margin: 1rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+
+}
+
+.imgContainer{
+    width: 80%;
+    padding-top: 100%;
+
+}
+
+.person img{
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.bio{
+    width: 1fr;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bio h3{
+    font-size: larger;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.bio p {
+   
+}
+
+.socialMediaContainer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.socialMedia{ 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: teal;
 }
 
 
@@ -336,9 +349,17 @@ footer a {
         grid-template-rows: 1fr 1fr 1fr ;
 
     }
+    .aboutHeadBanner{
+        height: 25rem;
+    }
 
 
 }
+@media (max-width: 700px){
+    .aboutHeadBanner div h1 {font-size: 3.5rem ;}
+    .aboutHeadBanner div p {font-size: 1.5rem;}
+}
+
 
 @media (max-width: 620px){
 
@@ -356,6 +377,21 @@ footer a {
 
     .div1-2{
         text-align: center;
+    }
+
+    .aboutHeadBanner{
+        height: 20rem;
+    }
+    .aboutHeadBanner div{
+        top: 40%;
+    }
+
+    .aboutHeadBanner div h1{
+        font-size: 3rem;
+    }
+
+    .aboutHeadBanner div p {
+        font-size: 1.25rem;
     }
 
 
@@ -391,6 +427,8 @@ footer a {
         font-size: 4rem;
     }
 
+
+
 }
 
 @media (max-width:375px){
@@ -399,6 +437,11 @@ footer a {
         font-size: 3.25rem;
     }
 
+}
+
+@media (max-width:370px){
+    .aboutHeadBanner{height: 22rem;}
+    .aboutHeadBanner div {top:32%}
 }
 
 
