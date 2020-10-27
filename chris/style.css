@@ -34,9 +34,7 @@ body {
     Font-Size: 20px;
     background-color: #2a9d8f;
     background: url(https://www.freevector.com/uploads/vector/preview/12741/FreeVector-Vector-Mixtape.jpg);
-    
-  background-position: center;
-  
+    background-position: center;
     margin-left: 10px;
     margin-right: 10px;
 
@@ -67,8 +65,9 @@ h1 {
     margin-bottom: 10px;
     background-color: #264653;
     color: #e9c46a;
-    opacity: .9;
+    opacity: .95;
     padding: 1.5%;
+    border-radius: 1em;
 
 
 }
@@ -84,10 +83,10 @@ h1 {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    height: 600px;
+    height: 580px;
     padding: 2%;
     background: url("https://www.freevector.com/uploads/vector/preview/16335/FreeVector-Retro-Microphone.jpg");
-    border-radius: 600px;
+    border-radius: 580px;
     
   
 
@@ -106,13 +105,14 @@ h1 {
     margin-bottom: 10px;
     background-color: #264653;
     color: #e9c46a;
-    opacity: .9;
+    opacity: .95;
     padding: 1.5%;
+    border-radius: 1em;
 
 }
 
 p {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 800;
     display: flex;
     align-items: baseline;
@@ -138,18 +138,20 @@ a:link, a:visited {
      width: 100%;
      display: flex;
      background-color: #264653;
-     opacity: .92;
+     opacity: .97;
      color: #e9c46a;
      border: 1px solid black;
+     border-radius: 10px;
      margin-top: 10px;
-     padding: 5px;
+     padding: 10px;
      font-weight: 800;
   }
   img {
       object-fit: cover;
       width: 200px;
-      opacity: .99;
       height: 250px;
+      border: 2px solid rgb(194, 168, 21);
+      border-radius: 40px 0 40px 0;
 
   }
   .right {
@@ -159,11 +161,12 @@ a:link, a:visited {
     align-items: flex-start;
     justify-content: flex-start;
     background-color: #264653;
-    opacity: .92;
+    opacity: .97;
     color: #e9c46a;
     border: 1px solid black;
+    border-radius: 10px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     font-weight: 800;
 
 
@@ -193,6 +196,12 @@ a:link, a:visited {
           align-items: center;
           justify-content: center;
       }
+      .mixtape {
+          font-size: 75%;
+      }
+      p {
+          font-size: 25px;
+      }
   }
 
   @media screen and (max-width: 500px) {
@@ -218,5 +227,13 @@ a:link, a:visited {
       img {
           height: 180px;
         width: 150px;
+      }
+      .team {
+          font-size: medium;
+      }
+      .mixtape {
+          height: 400px;
+          border-radius: 20px;
+          width: 40%;
       }
   }
